@@ -1,0 +1,5 @@
+outs:
+- md5: 05b9359561cec292c683d330a166a45a
+  size: 454
+  hash: md5
+  path: Salary_Data.csv
