@@ -1,0 +1,52 @@
+by krish Naik git cheatsheet:https://education.github.com/git-cheat-sheet-education.pdf
+1.Download git cli for your system
+2.create repo on github
+3.Git inialization to upload this folder to git repo by "git init"  it will create a folder .git 
+PS C:\Users\upesh\Documents\Git Github> git init
+Initialized empty Git repository in C:/Users/upesh/Documents/Git Github/.git/
+PS C:\Users\upesh\Documents\Git Github> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)      
+        REAME.md
+        outline.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+4.U with name of file means Untracked files tracking mode using "git add README.md" A means added
+5.Check status of folder again by git status
+6.now commit by "git commit -m "message""
+7."git branch -M main" branch can be main or master now check branch by "git branch"
+8."git remote add origin https://github.com/Upeshjeengar/practicegit.git" …or create a new repository on the command line on repo page
+9. check by "git remote -v"  git push origin main
+PS C:\Users\upesh\Documents\Git Github> git remote add origin https://github.com/Upeshjeengar/practicegit.git
+PS C:\Users\upesh\Documents\Git Github> git remote -v
+origin  https://github.com/Upeshjeengar/practicegit.git (fetch)
+origin  https://github.com/Upeshjeengar/practicegit.git (push)
+PS C:\Users\upesh\Documents\Git Github> git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 247 bytes | 247.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Upeshjeengar/practicegit.git
+ * [new branch]      main -> main
+
+10.Now again add README.md and do a second git commit
+
+11."git add ." will add all new files for tracking 
+12. You can direcly create a file and commit it to fetch that in vs code you can use "git pull orgin main"(git pull <remote> <branch>)
+13. gitignore line number 5 ya uske just baad adding location will not commit this specific folder "https://youtu.be/8KtY8ihZ8ME?list=PLTDARY42LDV7jzL_f68SY-eOQ9tY2lYvR&t=2000"
+
+14.create new branch "git branch developerA" and activate this branch by "git checkout developerA" developerA will now make changes and can commit after that this branch can be deleted then 
+ "git checkout main" then "git merge developerA" will merge main and developerA now delete "git branch -d developerA"
+ 
+ 15. collision handling:error: failed to push some refs to 'https://github.com/krishnaik06/practisegit.git'
+hint: Updates were rejected because the remote contains work that you do hint: not have locally. This is usually caused by another repository pushing hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull .') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+16.If two developers committed different segment to same code then the later developer will be asked for which code to go with
