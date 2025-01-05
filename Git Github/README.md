@@ -37,4 +37,16 @@
 * Create a branch named `final` and make some changes to helper.py and checkout to master and make some changes there and now if you `git merge final` you'll get error
 * You can choose any action: Accept Current Change | Accept Incoming Change | Accept Both Changes | Compare Changes
 
-### Working with Remote repo and versioning
+### Working with Remote repo 
+1. git remote add origin <url> (declaring remote repo) 
+2. git push origin master/main (sends local repo to origin) 
+3. git pull origin master (pull code from remote repo) 
+4. git clone <url> (download/copy remote repo)
+
+### Versioning
+1. git tag -a v1.0.0 <sha(optional)>   
+Vim editor:   
+Fn+insert -- write a message   
+:wq – save and quit 
+2. git log (check if tagging was done successfully) 
+3. git tag -d v1.0.0 (delete the mentioned tag)
