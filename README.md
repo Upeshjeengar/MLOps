@@ -4,3 +4,5 @@ I am using [Vikash Das](https://www.youtube.com/playlist?list=PLupK5DK91flV45dkP
 
 # **Topics:**
 ## 1.Learning about git and github
+## 2. DVC is git of Data
+look this repo: https://github.com/Upeshjeengar/MLOps-DVC/
