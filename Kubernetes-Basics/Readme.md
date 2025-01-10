@@ -152,7 +152,7 @@ Kubernetes is a **container orchestration platform** specifically designed to ad
 ---
 
 
-** Kubernetes Internals **
+**Kubernetes Internals**
 
 Master Node (Control Plane): The master node is the brain of the Kubernetes cluster. It oversees the system, manages workloads, and ensures everything runs as expected. Think of it as the manager in a factory that delegates tasks and monitors operations.
 
