@@ -50,3 +50,71 @@ Fn+insert -- write a message
 :wq – save and quit 
 2. git log (check if tagging was done successfully) 
 3. git tag -d v1.0.0 (delete the mentioned tag)
+
+
+# In organization git learnings:
+# Demo Project file
+
+
+
+### Git History and Creating Custom Git Commands with Aliases
+Will set hist as new command
+`git config --global alias.hist "log --online --graph --decorate --all"`. 
+
+* Renaming file: ```git mv old_file_name new_file_name```
+
+* Removing file: `git rm file_name`
+
+### Git Branch Operations
+
+#### Checkout a Branch
+```git checkout branch_name```
+- **Purpose**: Switches your working directory to the specified branch
+- **Parameters**:
+  - `branch_name`: The name of the branch you want to switch to
+- **Returns**: Confirmation message when successfully switched to the branch
+
+#### Merge Changes
+```git merge branch_name```
+- **Purpose**: Integrates changes from the specified branch into your current branch
+- **Parameters**:
+  - `branch_name`: The name of the branch whose changes you want to merge (e.g., main)
+- **Returns**: Confirmation of successful merge or conflict notifications if applicable
+
+#### Create a Tag
+```git tag v0.1```
+- **Purpose**: Creates a lightweight tag at the current commit
+- **Parameters**:
+  - `v0.1`: The name of the tag (typically version numbers)
+- **Returns**: No output if successful
+
+* Switch to the specified branch
+```git checkout branch_name```
+
+Merge changes from another branch (e.g., main)
+* ```git merge (from main)```
+
+* Create a new tag named v0.1
+```git tag v0.1```
+
+* Save changes temporarily without committing
+```git stash```
+
+* List all stashed changes
+```git stash list```
+
+* Undo commits, keep changes staged
+```git reset commit_id --soft```
+
+* Undo commits, keep changes unstaged
+```git reset commit_id --default```
+
+* Undo commits, keep changes in working directory
+```git reset commit_id --mixed```
+
+* Undo commits and discard all changes
+```git reset commit_id --hard```
+
+
+`````` 
+`````` 
