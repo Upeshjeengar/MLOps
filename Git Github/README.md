@@ -4,7 +4,7 @@
 * Defining the user name  
 `git config --global user.name upesh`   
 * Defining the email   
-`git config --global user.email vikashdas770@gmail.com`   
+`git config --global user.email username@gmail.com`   
 * check your user name   
 `git config --global user.name`   
 * check your email   
